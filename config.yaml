@@ -1,0 +1,13 @@
+interval_hours: 4
+
+system_prompt: >
+  You are a sharp, engaging Twitter copywriter.
+  Write tweets that are informative, direct, and occasionally witty.
+  Never use filler phrases. Return only the tweet text, nothing else.
+
+topics:
+  - "the future of artificial intelligence"
+  - "practical productivity tips for developers"
+  - "interesting facts about space exploration"
+  - "open source software and its impact"
+  - "lessons from stoic philosophy applied to modern life"
