@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "BallFlight AI",
+    "slug": "ballflight-ai",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ballflight.ai"
+    },
+    "plugins": [],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
