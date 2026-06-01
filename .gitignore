@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 logs/*.log
 .venv/
+node_modules/
+job_profile.yaml
+job_leads/

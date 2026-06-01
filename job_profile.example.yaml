@@ -1,0 +1,97 @@
+# Private file. Fill in email/phone before applying.
+name: "Your Name"
+email: "you@example.com"
+phone: "(555) 555-5555"
+city: "San Fernando Valley, CA"
+resume_path: "/Users/dylanzimmerman/Library/Mobile Documents/com~apple~CloudDocs/RESUME copy.docx"
+
+experience_summary: >
+  My recent iPic Theaters experience gave me premium guest-service, serving, teamwork,
+  and problem-solving experience in a fast-paced hospitality setting. I am looking for
+  a stable restaurant team where I can serve, support coworkers, and grow into lead or
+  supervisory responsibility.
+
+strengths:
+  - "Hard-working, reliable, and willing to pick up shifts when the team needs help."
+  - "Experienced with high-touch guest service, handling rushes, and staying calm under pressure."
+  - "Comfortable helping lead a shift, supporting coworkers, and taking responsibility for guest experience."
+  - "Interested in serving, lead server, trainer, captain, shift lead, or restaurant supervisor opportunities."
+
+target_titles:
+  - "server"
+  - "restaurant server"
+  - "lead server"
+  - "server supervisor"
+  - "shift lead restaurant"
+  - "restaurant supervisor"
+  - "food runner"
+  - "bartender"
+
+target_locations:
+  - "San Fernando Valley, CA"
+  - "Sherman Oaks, CA"
+  - "Studio City, CA"
+  - "Burbank, CA"
+  - "Glendale, CA"
+  - "Calabasas, CA"
+  - "Woodland Hills, CA"
+  - "Thousand Oaks, CA"
+  - "Westlake Village, CA"
+  - "Agoura Hills, CA"
+
+target_companies:
+  - "Mastro's Steakhouse Thousand Oaks"
+  - "Crawford's Social Westlake Village"
+  - "Paul Martin's American Grill Westlake Village"
+  - "The Stonehaus Westlake Village"
+  - "Mediterraneo Westlake Village"
+  - "Finney's Crafthouse Westlake Village"
+  - "Tarantula Hill Brewing Co Thousand Oaks"
+  - "Larsen's Grill Oxnard or Encino"
+  - "The Six Chow House Calabasas"
+  - "King's Fish House Calabasas"
+  - "Fleming's Prime Steakhouse Woodland Hills"
+  - "Joey Woodland Hills"
+  - "The Local Peasant Woodland Hills"
+  - "Casalena Woodland Hills"
+  - "Firefly Studio City"
+  - "Black Market Liquor Bar Studio City"
+  - "The Front Yard Studio City"
+  - "Granville Studio City"
+  - "Mizlala Sherman Oaks"
+  - "The Local Peasant Sherman Oaks"
+  - "Castaway Burbank"
+  - "Granville Burbank"
+  - "Din Tai Fung Glendale"
+  - "The Americana at Brand restaurants Glendale"
+
+positive_keywords:
+  - "server"
+  - "restaurant"
+  - "hospitality"
+  - "guest service"
+  - "fine dining"
+  - "upscale"
+  - "premium"
+  - "tips"
+  - "supervisor"
+  - "lead"
+  - "trainer"
+  - "shift lead"
+  - "team"
+  - "wine"
+  - "cocktail"
+  - "POS"
+
+negative_keywords:
+  - "cook"
+  - "dishwasher"
+  - "delivery driver"
+  - "warehouse"
+  - "commission only"
+  - "temporary"
+  - "volunteer"
+
+minimum_score: 35
+results_per_query: 20
+max_leads: 50
