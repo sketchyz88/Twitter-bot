@@ -17,6 +17,19 @@ The fastest way to use it is **not** to wait for API keys. Generate a private pr
 
 It does **not** submit applications without you reviewing them. Fully automated job applications can violate job-board terms, submit inaccurate answers, and hurt your chances. This tool gets you to the apply links quickly with tailored notes and a tracking system so you can apply fast but still stay accurate.
 
+
+## No-Terminal Mac launcher
+
+If Terminal is confusing, double-click:
+
+```text
+RUN_JOB_HUNTER.command
+```
+
+If macOS blocks it, right-click the file, choose **Open**, then choose **Open** again. The launcher installs requirements, creates `job_profile.yaml` if needed, opens it so you can add your email/phone, then opens the first 10 application/search links and the tracker files.
+
+See `QUICK_START_FOR_DYLAN.md` for the simplest step-by-step version.
+
 ## Fast start: get applications out today
 
 1. Install dependencies:
