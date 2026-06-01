@@ -1,14 +1,15 @@
-# Copy this file to job_profile.yaml and replace placeholders with your details.
-# Keep job_profile.yaml private; it may contain personal contact information.
+# Private file. Fill in email/phone before applying.
 name: "Your Name"
 email: "you@example.com"
 phone: "(555) 555-5555"
 city: "San Fernando Valley, CA"
-resume_path: "resume.pdf"
+resume_path: "/Users/dylanzimmerman/Library/Mobile Documents/com~apple~CloudDocs/RESUME copy.docx"
 
 experience_summary: >
   My recent iPic Theaters experience gave me premium guest-service, serving, teamwork,
-  and problem-solving experience in a fast-paced hospitality setting.
+  and problem-solving experience in a fast-paced hospitality setting. I am looking for
+  a stable restaurant team where I can serve, support coworkers, and grow into lead or
+  supervisory responsibility.
 
 strengths:
   - "Hard-working, reliable, and willing to pick up shifts when the team needs help."
@@ -37,6 +38,32 @@ target_locations:
   - "Thousand Oaks, CA"
   - "Westlake Village, CA"
   - "Agoura Hills, CA"
+
+target_companies:
+  - "Mastro's Steakhouse Thousand Oaks"
+  - "Crawford's Social Westlake Village"
+  - "Paul Martin's American Grill Westlake Village"
+  - "The Stonehaus Westlake Village"
+  - "Mediterraneo Westlake Village"
+  - "Finney's Crafthouse Westlake Village"
+  - "Tarantula Hill Brewing Co Thousand Oaks"
+  - "Larsen's Grill Oxnard or Encino"
+  - "The Six Chow House Calabasas"
+  - "King's Fish House Calabasas"
+  - "Fleming's Prime Steakhouse Woodland Hills"
+  - "Joey Woodland Hills"
+  - "The Local Peasant Woodland Hills"
+  - "Casalena Woodland Hills"
+  - "Firefly Studio City"
+  - "Black Market Liquor Bar Studio City"
+  - "The Front Yard Studio City"
+  - "Granville Studio City"
+  - "Mizlala Sherman Oaks"
+  - "The Local Peasant Sherman Oaks"
+  - "Castaway Burbank"
+  - "Granville Burbank"
+  - "Din Tai Fung Glendale"
+  - "The Americana at Brand restaurants Glendale"
 
 positive_keywords:
   - "server"

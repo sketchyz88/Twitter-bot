@@ -1,20 +1,23 @@
 # Restaurant Job Hunter
 
-This repo now includes a focused job-search assistant for serving, lead server, shift lead, and restaurant supervisor jobs around the San Fernando Valley, Thousand Oaks, Westlake Village, and nearby areas.
+This repo includes a focused job-search assistant for serving, lead server, shift lead, bartender, and restaurant supervisor jobs around the San Fernando Valley, Thousand Oaks, Westlake Village, and nearby areas.
+
+The fastest way to use it is **not** to wait for API keys. Generate a private profile, open the first batch of target links, apply manually, and track every follow-up.
 
 ## What it does
 
-- Searches current job posts through the Adzuna Jobs API.
-- Scores postings against your preferred titles, locations, and hospitality keywords.
-- Creates `job_leads/applications.csv` so you can track every lead, application date, follow-up date, interview date, and notes.
-- Writes tailored draft cover notes in `job_leads/drafts/` for the best matches.
-- Optionally opens the top application links in your browser.
+- Creates a private `job_profile.yaml` pre-filled for Dylan's restaurant search, including the iCloud resume path from the shared resume file.
+- Builds `job_leads/applications.csv` so you can track every application, status, follow-up date, interview date, and notes.
+- Writes tailored draft cover notes in `job_leads/drafts/` for each target or job lead.
+- Writes `job_leads/today_application_plan.md` with a one-hour application sprint, phone script, and follow-up script.
+- Opens high-priority application/search links in your browser so you can start applying immediately.
+- Optionally searches current job posts through the Adzuna Jobs API when credentials are available.
 
 ## What it will not do automatically
 
-It does **not** submit applications without you reviewing them. Fully automated job applications can violate job-board terms, submit inaccurate answers, and hurt your chances. This tool gets you to the apply links quickly with a tailored note and a tracking system so you can apply fast but still stay accurate.
+It does **not** submit applications without you reviewing them. Fully automated job applications can violate job-board terms, submit inaccurate answers, and hurt your chances. This tool gets you to the apply links quickly with tailored notes and a tracking system so you can apply fast but still stay accurate.
 
-## Setup
+## Fast start: get applications out today
 
 1. Install dependencies:
 
@@ -22,49 +25,71 @@ It does **not** submit applications without you reviewing them. Fully automated 
    pip install -r requirements.txt
    ```
 
-2. Register for Adzuna API credentials at <https://developer.adzuna.com/>.
-
-3. Export your credentials:
+2. Create your private profile:
 
    ```bash
-   export ADZUNA_APP_ID="your_app_id"
-   export ADZUNA_APP_KEY="your_app_key"
+   python job_hunter.py --init-profile
    ```
 
-4. Copy the example profile and personalize it:
+3. Open `job_profile.yaml` and fill in your real email and phone number. The template already points to:
+
+   ```text
+   /Users/dylanzimmerman/Library/Mobile Documents/com~apple~CloudDocs/RESUME copy.docx
+   ```
+
+4. Export your resume as a PDF too. Most application sites accept PDFs more reliably than `.docx` files.
+
+5. Generate today's application packet and open the first 10 links:
 
    ```bash
-   cp job_profile.example.yaml job_profile.yaml
+   python job_hunter.py --source targets --open 10
    ```
 
-5. Edit `job_profile.yaml` with your real name, email, phone, resume path, strengths, target titles, and target cities.
+6. Apply to real openings from those links, then update `job_leads/applications.csv` after every submission.
 
-## Run it
+## Run options
 
-Search one page per title/location pair:
-
-```bash
-python job_hunter.py --profile job_profile.yaml --pages 1
-```
-
-Search more deeply and open the top 5 application links:
+Generate target/search links without API keys:
 
 ```bash
-python job_hunter.py --profile job_profile.yaml --pages 2 --open 5
+python job_hunter.py --source targets
 ```
+
+Generate target/search links and open the top 15:
+
+```bash
+python job_hunter.py --source targets --open 15
+```
+
+Use Adzuna if you already have credentials:
+
+```bash
+export ADZUNA_APP_ID="your_app_id"
+export ADZUNA_APP_KEY="your_app_key"
+python job_hunter.py --source adzuna --pages 1
+```
+
+Use target links plus Adzuna results:
+
+```bash
+python job_hunter.py --source both --pages 1 --open 10
+```
+
+If you run with the default `--source auto`, the script uses Adzuna when credentials are set. If credentials are missing, it automatically falls back to target/search links so you are not blocked.
 
 ## Daily workflow
 
 1. Run the script each morning.
-2. Open `job_leads/applications.csv`.
-3. Apply to the highest-score postings first.
-4. Use the matching draft in `job_leads/drafts/` as your starting cover note.
-5. Update `status`, `date_applied`, `follow_up_date`, and `notes` in the CSV.
-6. Follow up three to five business days later for restaurants where you really want to work.
+2. Open `job_leads/today_application_plan.md`.
+3. Open `job_leads/applications.csv`.
+4. Apply to the highest-priority postings first.
+5. Use the matching draft in `job_leads/drafts/` as your starting cover note.
+6. Update `status`, `date_applied`, `follow_up_date`, and `notes` in the CSV.
+7. Follow up three to five business days later for restaurants where you really want to work.
 
 ## Suggested search terms for your situation
 
-The example profile is already tuned toward:
+The example profile is tuned toward:
 
 - Server
 - Restaurant server
