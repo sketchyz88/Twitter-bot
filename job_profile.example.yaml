@@ -1,0 +1,70 @@
+# Copy this file to job_profile.yaml and replace placeholders with your details.
+# Keep job_profile.yaml private; it may contain personal contact information.
+name: "Your Name"
+email: "you@example.com"
+phone: "(555) 555-5555"
+city: "San Fernando Valley, CA"
+resume_path: "resume.pdf"
+
+experience_summary: >
+  My recent iPic Theaters experience gave me premium guest-service, serving, teamwork,
+  and problem-solving experience in a fast-paced hospitality setting.
+
+strengths:
+  - "Hard-working, reliable, and willing to pick up shifts when the team needs help."
+  - "Experienced with high-touch guest service, handling rushes, and staying calm under pressure."
+  - "Comfortable helping lead a shift, supporting coworkers, and taking responsibility for guest experience."
+  - "Interested in serving, lead server, trainer, captain, shift lead, or restaurant supervisor opportunities."
+
+target_titles:
+  - "server"
+  - "restaurant server"
+  - "lead server"
+  - "server supervisor"
+  - "shift lead restaurant"
+  - "restaurant supervisor"
+  - "food runner"
+  - "bartender"
+
+target_locations:
+  - "San Fernando Valley, CA"
+  - "Sherman Oaks, CA"
+  - "Studio City, CA"
+  - "Burbank, CA"
+  - "Glendale, CA"
+  - "Calabasas, CA"
+  - "Woodland Hills, CA"
+  - "Thousand Oaks, CA"
+  - "Westlake Village, CA"
+  - "Agoura Hills, CA"
+
+positive_keywords:
+  - "server"
+  - "restaurant"
+  - "hospitality"
+  - "guest service"
+  - "fine dining"
+  - "upscale"
+  - "premium"
+  - "tips"
+  - "supervisor"
+  - "lead"
+  - "trainer"
+  - "shift lead"
+  - "team"
+  - "wine"
+  - "cocktail"
+  - "POS"
+
+negative_keywords:
+  - "cook"
+  - "dishwasher"
+  - "delivery driver"
+  - "warehouse"
+  - "commission only"
+  - "temporary"
+  - "volunteer"
+
+minimum_score: 35
+results_per_query: 20
+max_leads: 50
